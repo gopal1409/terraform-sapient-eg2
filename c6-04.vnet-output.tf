@@ -19,7 +19,7 @@ output "web_subnet_nsg_name" {
   description = "web subnet nsg name"
   value = azurerm_network_security_group.web_subnet_nsg.name    
 }
-output "web_subnet_id" {
+output "web_subnet_nsg_id" {
   description = "web subnet nsg id"
   value = azurerm_network_security_group.web_subnet_nsg.id
 }
