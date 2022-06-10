@@ -3,7 +3,7 @@ resource "azurerm_subnet" "bastionsubnet" {
   #name of the subnet=vnetname-variable define in subnet
   resource_group_name  = azurerm_resource_group.rg.name    #coming from tfstate file
   virtual_network_name = azurerm_virtual_network.vnet.name #tfstate name
-  address_prefixes     = var.bastion_subnet_adress
+  address_prefixes     = var.bastion_subnet_address
 }
 resource "azurerm_network_security_group" "bastion_subnet_nsg" {
   name                = "${azurerm_subnet.bastionsubnet.name}-nsg"

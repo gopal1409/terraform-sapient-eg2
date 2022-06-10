@@ -12,7 +12,7 @@ resource "null_resource" "null_copy_ssh_key_to_bastion" {
   }
   #we need to copy the terraform pem file inside a directory
   provisioner "file" {
-    source      = "/ssh-keys/terraform-azure.pem"
+    source      = "ssh-keys/terraform-azure.pem"
     destination = "/tmp/terraform-azure.pem"
   }
   provisioner "remote-exec" {
