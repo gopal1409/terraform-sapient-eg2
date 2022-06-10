@@ -1,4 +1,4 @@
-resource "azurerm_subnet" "bastion_service_subnet" {
+/*resource "azurerm_subnet" "bastion_service_subnet" {
   name = var.bastion_service_subnet_name
   #name of the subnet=vnetname-variable define in subnet
   resource_group_name  = azurerm_resource_group.rg.name    #coming from tfstate file
@@ -23,4 +23,4 @@ resource "azurerm_bastion_host" "bastion_host" {
     subnet_id = azurerm_subnet.bastion_service_subnet.id 
     public_ip_address_id = azurerm_public_ip.bastion_service_publicip.id
   }
-}
+}*/

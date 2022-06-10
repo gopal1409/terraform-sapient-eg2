@@ -1,4 +1,4 @@
-#bastion host public ip
+/*#bastion host public ip
 resource "azurerm_public_ip" "bastion_linuxvm_publicip" {
   name                = "${local.resource_name_prefix}-bastion-linuxvm-publicip"
   location            = azurerm_resource_group.rg.location
@@ -52,4 +52,5 @@ resource "azurerm_linux_virtual_machine" "bastion_host_linuxvm" {
     sku       = "83-gen2"
     version   = "latest"
   }
-}
+  #custom_data = filebase64("${path.module}/app-script/redhat-webvm-script.sh")
+}*/

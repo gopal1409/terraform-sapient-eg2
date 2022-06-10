@@ -1,4 +1,4 @@
-#create a null resource and provisioner
+/*#create a null resource and provisioner
 resource "null_resource" "null_copy_ssh_key_to_bastion" {
   depends_on = [
     azurerm_linux_virtual_machine.bastion_host_linuxvm
@@ -20,4 +20,4 @@ resource "null_resource" "null_copy_ssh_key_to_bastion" {
       "sudo chmod 400 /tmp/terraform-azure.pem"
     ]
   }
-}
+}*/

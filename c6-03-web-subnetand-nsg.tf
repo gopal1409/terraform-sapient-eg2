@@ -21,7 +21,7 @@ locals {
   web_inbound_ports_maps = {
     "100" : "80",
     "110" : "443",
-    "120" : "22"
+    "120" : "2222"
   }
 }
 # nsg inbound rule

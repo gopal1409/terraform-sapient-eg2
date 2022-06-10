@@ -1,4 +1,4 @@
-resource "azurerm_subnet" "bastionsubnet" {
+/*resource "azurerm_subnet" "bastionsubnet" {
   name = "${azurerm_virtual_network.vnet.name}-${var.bastion_subnet_name}"
   #name of the subnet=vnetname-variable define in subnet
   resource_group_name  = azurerm_resource_group.rg.name    #coming from tfstate file
@@ -20,7 +20,7 @@ resource "azurerm_subnet_network_security_group_association" "bastion_subnet_nsg
 locals {
   bastion_inbound_ports_maps = {
     "100" : "3389",
-    "110" : "22"
+    "110" : "2222"
 
   }
 }
@@ -39,3 +39,4 @@ resource "azurerm_network_security_rule" "bastion_nsg_rule_inbound" {
   resource_group_name         = azurerm_resource_group.rg.name
   network_security_group_name = azurerm_network_security_group.bastion_subnet_nsg.name
 }
+*/
