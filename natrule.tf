@@ -1,7 +1,4 @@
 
-gopal das <gopal1409@gmail.com>
-2:26 PM (0 minutes ago)
-to me
 
 # Azure LB Inbound NAT Rule
 resource "azurerm_lb_nat_rule" "web_lb_inbound_nat_rule_22" {
