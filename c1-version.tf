@@ -16,6 +16,13 @@ terraform {
     null = {
       source = "hashicorp/null"
     }
+    
+  }
+  backend "azurerm" {
+    resource_group_name = "terraformstorage"
+    storage_account_name = "terraformstoragego"
+    container_name = "tfstatefiles"
+    key = "project1-eastus.tfsate"
   }
 }
 
