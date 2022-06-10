@@ -29,7 +29,7 @@ resource "azurerm_linux_virtual_machine" "bastion_host_linuxvm" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   #computer_name = "devlinux-vm1-${count.index}"
-  size           = "Standard_DS1_v2"
+  size           = "Standard_B1s"
   admin_username = "azureuser"
   network_interface_ids = [
     azurerm_network_interface.bastion_linuxvm_nic.id
